@@ -1,24 +1,49 @@
 # Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+This is a basic Lumen Laravel project that includes an implementation of JSON Web Token (JWT) authentication.
 
-## Official Documentation
+## Getting Started
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Contributing
+### Prerequisites
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP 7.4 or higher
+- Composer
+- MySQL
 
-## Security Vulnerabilities
+### Installation
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1. Clone the repository
+```
+git clone https://github.com/khannoussi-malek/laravel-lumen-start/
+```
+2. Install dependencies
+```
+composer install
+```
 
-## License
+3. Create a copy of the .env file
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ ```
+ cp .env.example .env
+ ```
+4. Update the .env file with your database credentials
+5. Run the migration
+ ```
+php artisan migrate
+ ```
+
+ ### Usage
+
+To start the development server:
+ ```
+php -S localhost:8000 -t public
+ ```
+ 
+### Blog
+For more detailed information and instructions, please refer to the [accompanying blog post](https://www.malekkhannoussi.me/blog/php/Lumen)
+
+### Authors
+- [Malek Khannoussi](https://www.malekkhannoussi.me/)
